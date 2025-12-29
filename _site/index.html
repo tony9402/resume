@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>김민상 | <Title></title><!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/resume/" />
+<meta property="og:url" content="http://localhost:4000/resume/" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/resume/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/resume/assets/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/resume/assets/favicon.ico"></head>
+<body class=""><div class="container header-container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+      <h1>김민상</h1>
+      <h2>&lt;Title&gt;</h2>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+      <ul class="icons no-print"><li>
+            <a target="_blank" href="https://github.com/tony9402" class="button button--sacnite button--round-l">
+              <i class="fab fa-github" title="Github link"></i>
+            </a>
+          </li><li>
+            <a target="_blank" href="https://www.linkedin.com/in/tony9402" class="button button--sacnite button--round-l">
+              <i class="fab fa-linkedin" title="Linkedin link"></i>
+            </a>
+          </li>
+      </ul><p>
+          Email: <a href="mailto:tony9402@naver.com" target="_blank">tony9402@naver.com</a>
+        </p></div>
+  </div>
+</div>
+<main class="page-content" aria-label="Content">
+    <div class="wrapper"><div class="container intro-container">
+  <h3 id="about-me">About Me</h3>
+  <div class="row clearfix"><div class="col-xs-12 col-sm-4 col-md-3 no-print">
+        <span class="profile-img" style="background-image: url(/resume/images/profile.jpeg)"></span>
+      </div><div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+      <p>Writing</p>
+
+<p id="elapsed"></p>
+
+<script>
+  const start = new Date("2024-04-19T00:00:00+09:00");
+  const endExclusive = new Date("2027-04-18T00:00:00+09:00");
+  const elapsedEl = document.getElementById("elapsed");
+
+  function clamp(n, a, b) { return Math.min(b, Math.max(a, n)); }
+
+  function update() {
+    const now = new Date();
+    const raw = ((now - start) / (endExclusive - start)) * 100;
+    const percent = clamp(raw, 0, 100);
+
+    elapsedEl.textContent = "전문연구요원 복무중 (2024.04.19 - 2027.04.18) (" + percent.toFixed(7) + "%)";
+  }
+  update();
+  setInterval(update, 100);
+</script>
+
+
+    </div>
+  </div>
+</div>
+
+          <div class="container list-container">
+            <h3 id="work-experience">Work Experience</h3>
+            
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="와이즈넛">㈜ 와이즈넛</h4><p><b>NLP Researcher</b></p><p>2024.04 - present</p>
+<a href="//www.wisenut.com" target="_blank" class="link">회사 링크</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p style="font-size: 20px; margin-top: 20px;"><strong>Retriever 모델 연구</strong></p>
+<ul>
+  <li>검색 모델(query to document, document to document) 학습 및 평가 파이프라인 개발</li>
+  <li>In Batch Negative Sampling을 위한 데이터 로더 개발</li>
+  <li>Programming Language
+    <ul>
+      <li>Python</li>
+    </ul>
+  </li>
+  <li>Containerization
+    <ul>
+      <li><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">Docker (NVIDIA Container Toolkit / nvidia-docker)</a></li>
+    </ul>
+  </li>
+  <li>Distributed Training
+    <ul>
+      <li>DeepSpeed</li>
+      <li>FSDP</li>
+    </ul>
+  </li>
+  <li>NLP / LLM Frameworks &amp; Libraries
+    <ul>
+      <li><a href="https://github.com/huggingface/transformers" target="_blank">transformers</a></li>
+      <li><a href="https://github.com/huggingface/sentence-transformers" target="_blank">sentence-transformers</a></li>
+    </ul>
+  </li>
+  <li>Vector Search
+    <ul>
+      <li>FAISS</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="font-size: 20px; margin-top: 20px;"><strong>LLM Edge Case 평가 연구</strong></p>
+<ul>
+  <li>기존 오프라인 평가 결과와 실사용 환경 성능 간 괴리를 발견하고, 이를 검증·보완하기 위한 엣지 케이스 평가셋 개발.</li>
+  <li>Edge Case 평가 모듈 개발</li>
+</ul>
+
+<p style="font-size: 20px; margin-top: 20px;"><strong>LLM 태스크 특화 모델 연구</strong></p>
+<ul>
+  <li>기존 성능을 유지한채로 초안 작성 기능을 추가하기 위한 Fine Tuning 연구</li>
+  <li>학습/평가 데이터 구축을 위한 전처리 알고리즘 개발</li>
+  <li>Containerization
+    <ul>
+      <li><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">Docker (NVIDIA Container Toolkit / nvidia-docker)</a></li>
+    </ul>
+  </li>
+  <li>Distributed Training
+    <ul>
+      <li>DeepSpeed</li>
+      <li>FSDP</li>
+    </ul>
+  </li>
+  <li>NLP/ LLM Frameworks &amp; Libraries
+    <ul>
+      <li><a href="https://github.com/huggingface/transformers" target="_blank">transformers</a></li>
+      <li>LLama Factory</li>
+      <li>Peft</li>
+      <li>lm-eval-harness</li>
+      <li>vLLM</li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="projects">Projects</h3>
+            
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="자동-gpu-cloud에-딥러닝-학습-실험-업로드-모듈">자동 GPU Cloud에 딥러닝 학습 실험 업로드 모듈</h4>
+<a href="https://github.com/tony9402/kiml-monitoring" target="_blank" class="link">프로젝트 Github 링크</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="코딩테스트-대비-문제집-6-3k-stars">코딩테스트 대비 문제집 (6.3K Stars)</h4>
+<a href="https://github.com/tony9402/baekjoon" target="_blank" class="link">프로젝트 Github 링크</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="open-source-contribution">Open Source Contribution</h3>
+            
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="huggingface-transformers-154k-stars">huggingface/transformers (154K Stars)</h4>
+<a href="https://github.com/huggingface/transformers" target="_blank" class="link">https://github.com/huggingface/transformers</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="activity">Activity</h3>
+            
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="software-maestro">Software Maestro</h4><p><b>11기 (팀명 TrustNet)</b></p><p>2020.06 - 2020.12</p>
+<a href="//swmaestro.org" target="_blank" class="link">swmaestro.org</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>소프트웨어 마에스트로 11기 TrustNet 팀명으로 DeepFake로 조작된 영상을 검출하는 솔루션을 개발하는 프로젝트를 진행하였습니다.</p>
+
+<p>11기 주요 프로젝트에 포함되었습니다.</p>
+<ul>
+  <li>https://www.swmaestro.org/sw/singl/projectIntc/list.do?menuNo=200013</li>
+</ul>
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="bixby-crew-samsung-electronics">Bixby Crew (Samsung Electronics)</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="알고리즘-문제-출제-및-검수">알고리즘 문제 출제 및 검수</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><ul>
+  <li>약 1200 문제 출제 및 검수</li>
+</ul>
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="알고리즘-멘토링">알고리즘 멘토링</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><ul>
+  <li>2023 Summer</li>
+  <li>2023 Winter</li>
+  <li>2024 Winter</li>
+  <li>2024 Summer</li>
+  <li>2025 Summer</li>
+</ul>
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="알고리즘-책-리뷰어-및-검수">알고리즘 책 리뷰어 및 검수</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><ul>
+  <li>(베타 리뷰) <a href="https://github.com/bjpublic/javarithms" target="_blank">자료구조와 알고리즘을 함께 Java!</a></li>
+  <li>(검수중) 실전 코딩 테스트 가이드</li>
+</ul>
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="education">Education</h3>
+            
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="soongsil-university">Soongsil University</h4><p><b>석사 - 융합소프트웨어학과</b></p><p>2021.09 - 2023.08</p>
+<a href="//sw.ssu.ac.kr" target="_blank" class="link">sw.ssu.ac.kr</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="soongsil-university">Soongsil University</h4><p><b>학사 - 컴퓨터학부(복수전공)</b></p><p>2018.09 - 2021.08</p>
+<a href="//cse.ssu.ac.kr" target="_blank" class="link">cse.ssu.ac.kr</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="soongsil-university">Soongsil University</h4><p><b>학사 - 전자공학전공 (주전공)</b></p><p>2017.03 - 2021.08</p>
+<a href="//infocom.ssu.ac.kr" target="_blank" class="link">infocom.ssu.ac.kr</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="publication">Publication</h3>
+            
+  <div class="row clearfix layout layout-top-middle border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="특허">특허</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="모션인식을-활용한-자동-수화-번역-제공-시스템-및-그-방법">모션인식을 활용한 자동 수화 번역 제공 시스템 및 그 방법</h4><p><b>특허 - 출원 (2020.12)</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top-middle border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="국내-논문">국내 논문</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="가이던스-기반-이중-에이전트-프레임워크를-통한-실시간-검색-성능-향상">가이던스 기반 이중 에이전트 프레임워크를 통한 실시간 검색 성능 향상</h4><p><b>김민상, 박찬솔, 최승호, 박시현, 김봉수, HCLT 2025</b></p>
+<a href="https://sites.google.com/view/hclt-2025" target="_blank" class="link">학회 홈페이지</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="지속학습을-위한-하드-네거티브-샘플링-기반-검색-모델-향상-기법">지속학습을 위한 하드 네거티브 샘플링 기반 검색 모델 향상 기법</h4><p><b>김민상, 최승호, 박시현, 박찬솔, 왕준호, 김지윤, 김봉수, HCLT 2024</b></p>
+<a href="https://sites.google.com/view/hclt2024" target="_blank" class="link">학회 홈페이지</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="향상된-특징-추출-기반의-극한-다중-레이블-특허-분류-기법">향상된 특징 추출 기반의 극한 다중 레이블 특허 분류 기법</h4><p><b>김민상, 학위논문</b></p>
+<a href="https://www.dbpia.co.kr/journal/detail?nodeId=T16784793" target="_blank" class="link">논문 링크</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top-middle border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="해외-논문">해외 논문</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="hanjabridge-resolving-semantic-ambiguity-in-korean-llms-via-hanja-augmented-pre-training">HanjaBridge: Resolving Semantic Ambiguity in Korean LLMs via Hanja-Augmented Pre-Training</h4><p><b>Seungho Choi*, Sihyun Park*, Minsang Kim*, Chansol Park*, Bongsu Kim*, AAAI 2026</b></p>
+<a href="https://aaai.org/conference/aaai/aaai-26/main-technical-track" target="_blank" class="link">학회 링크 (논문 공개 전)</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="robust-deepfake-detection-method-based-on-ensemble-of-vit-and-cnn">Robust DeepFake Detection Method based on Ensemble of ViT and CNN</h4><p><b>Hyunsoo Ha, Minsang Kim, Songhun Han, Sangjun Lee, SAC 2023 Poster</b></p>
+<a href="https://dl.acm.org/doi/10.1145/3555776.3577769" target="_blank" class="link">논문 링크</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container list-container">
+            <h3 id="award-and-honors">Award and Honors</h3>
+            
+  <div class="row clearfix layout layout-top-middle border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="장학금">장학금</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="2020-1학기-숭실대학교-it미래인재장학금-선발">2020-1학기 숭실대학교 IT미래인재장학금 선발</h4><p><b>2019.12</b></p>
+<a href="https://sw.ssu.ac.kr/bbs/board.php?bo_table=notice&wr_id=1047" target="_blank" class="link">선발 발표</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="2019-2학기-숭실대학교-it미래인재장학금-선발">2019-2학기 숭실대학교 IT미래인재장학금 선발</h4><p><b>2019.06</b></p>
+<a href="https://sw.ssu.ac.kr/bbs/board.php?bo_table=notice&wr_id=954" target="_blank" class="link">선발 발표</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top-middle border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="수상">수상</h4><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="acm-icpc-daejeon-regional-35th-place">ACM-ICPC Daejeon Regional 35th place</h4><p><b>2021.11</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="acm-icpc-교내-예선-2위">ACM-ICPC 교내 예선 2위</h4><p><b>2021.1</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="청년창업아이디어-경진대회-특별상">청년창업아이디어 경진대회 특별상</h4><p><b>2020.12</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-it-대학-알고리즘-대회-3위">숭실대학교 IT 대학 알고리즘 대회 3위</h4><p><b>2020.11</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-캡스톤-경진대회-은상">숭실대학교 캡스톤 경진대회 은상</h4><p><b>2020.1</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="브랜디-코드네임b-입상">브랜디 코드네임B 입상</h4><p><b>2020.1</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="bixby-capsule-challenge-시즌-2-동상">Bixby Capsule Challenge (시즌 2) 동상</h4><p><b>2019.12</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="acm-icpc-daejeon-regional-16th-place">ACM-ICPC Daejeon Regional 16th place</h4><p><b>2019.11</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="acm-icpc-교내-예선-2위">ACM-ICPC 교내 예선 2위</h4><p><b>2019.1</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-it대학-소프트웨어-공모전-동상">숭실대학교 IT대학 소프트웨어 공모전 동상</h4><p><b>2019.09</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-캡스톤-경진대회-장려상">숭실대학교 캡스톤 경진대회 장려상</h4><p><b>2019.09</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="bixby-capsule-challenge-시즌-1-7위">Bixby Capsule Challenge (시즌 1) 7위</h4><p><b>2019.07</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-교내-알고리즘-대회-scon-4위">숭실대학교 교내 알고리즘 대회 SCON 4위</h4><p><b>2019.05</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-교내-알고리즘-대회-spring-contest-7위">숭실대학교 교내 알고리즘 대회 Spring Contest 7위</h4><p><b>2019.04</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="soc-robot-war-soc-태권로봇-3위">SoC Robot War (SoC 태권로봇) 3위</h4><p><b>2018.08</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-top border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4 id="숭실대학교-캡스톤-경진대회-우수상">숭실대학교 캡스톤 경진대회 우수상</h4><p><b>2017.09</b></p><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+
+    </div>
+  </div>
+
+
+          </div>
+        
+          <div class="container text-container">
+            <h3 id="a-little-more-about-me">A Little More About Me</h3>
+            <div class="row clearfix">
+  <div class="col-md-12">
+    <p>This is where you can write a little more about yourself. You could title this section <strong>Interests</strong> and include some of your other interests.</p>
+
+<p>Or you could title it <strong>Skills</strong> and write a bit more about things that make you more desirable, like <em>leadership</em> or <em>teamwork</em></p>
+
+  </div>
+</div>
+
+          </div>
+        
+      </div>
+  </main><div class="container footer-container">
+  <p>
+    김민상 -
+    <a href="mailto:tony9402@naver.com" target="_blank">tony9402@naver.com</a>&nbsp;- References on request</p>
+</div>
+    <script src="/resume/assets/js/index.js"></script>
+  
+</body>
+
+</html>
