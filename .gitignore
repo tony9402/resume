@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,macos,windows,python,java,c++,linux,pycharm+all,visualstudiocode
 
 .sass-cache/
+vendor/
 
 ### C++ ###
 # Prerequisites
