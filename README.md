@@ -1,5 +1,25 @@
 # modern-resume-theme [![Gem Version](https://badge.fury.io/rb/modern-resume-theme.svg)](https://badge.fury.io/rb/modern-resume-theme) ![CI workflow](https://github.com/sproogen/modern-resume-theme/workflows/CI%20workflow/badge.svg?branch=master)
 
+<!-- repository-guide:start -->
+## 저장소 안내
+
+tony9402의 이력서 사이트 소스입니다. Jekyll 기반의 `modern-resume-theme`를 사용하며, 이력서 내용과 화면 구성을 이 저장소에서 관리합니다.
+
+| 경로 | 내용 |
+| --- | --- |
+| [_config.yml](_config.yml) | 이력서 내용과 사이트 설정 |
+| [index.md](index.md) | 사이트의 메인 페이지 |
+| [_layouts/](_layouts/) | 페이지 레이아웃 |
+| [_includes/](_includes/) | 화면 구성 요소 |
+| [assets/](assets/) | 스타일과 클라이언트 스크립트 |
+| [LICENSE](LICENSE) | 원본 테마의 라이선스 |
+
+이력서 내용은 `_config.yml`을 먼저 확인하세요. `_site/`에는 빌드 결과가 들어 있으므로 원본 설정과 템플릿을 수정한 뒤 다시 빌드합니다. 아래에는 원본 테마의 설치·사용 문서를 유지합니다.
+
+목적과 구현 범위, 구성 분석은 [Explain.md](Explain.md)를 참고하세요.
+
+<!-- repository-guide:end -->
+
 *A modern simple static resume template and theme. Powered by Jekyll and GitHub pages.*  
 *Host your own resume on GitHub for **free!***
 
